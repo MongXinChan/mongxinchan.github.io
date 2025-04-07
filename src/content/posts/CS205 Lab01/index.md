@@ -4,9 +4,10 @@ published: 2025-03-18
 updated: 2025-04-03
 description: 'Welcome to my CS205 lecture notes!'
 image: ''
-tags: [ComputerScience,ProgramDesign,Cpp ]
+tags: [ComputerScience,ProgramDesign,Cpp,Ubuntu,Linux ]
 category: 'ComputerScience''English'
 draft: false 
+lang: en
 ---
 > [!TIP]
 >
@@ -42,7 +43,7 @@ wsl --install -d Ubuntu-20.04
 
 That's my successful examples.
 
-```BASH
+```bash
 DISM.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All /NoRestart
 ```
 

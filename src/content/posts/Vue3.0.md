@@ -7,6 +7,7 @@ image: ''
 tags: [ComputerScience,Fronted,Vue ]
 category: 'ComputerScience''中文'
 draft: false 
+lang: zh_cn
 ---
 
 
