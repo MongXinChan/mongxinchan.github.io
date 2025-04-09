@@ -1,76 +1,42 @@
 ---
-import { getCollection } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
+import musicData from "../data/music.json";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-const allMusic = await getCollection("music");
-// 改用reduce实现分组
-const groupedMusic = allMusic.reduce((acc, music) => {
-	const category = music.data.category;
-	if (!acc[category]) acc[category] = [];
-	acc[category].push(music);
-	return acc;
-}, {});
+// 转换数据格式方便渲染
+const categories = Object.entries(musicData.categories);
 ---
 
 <MainGridLayout title="音乐收藏">
-    <div class="card-base p-6">
-        <!-- 分类导航 -->
-        <div class="flex flex-wrap gap-2 mb-8 sticky top-4 z-10 bg-[var(--card-bg)] py-2">
-            {Object.keys(groupedMusic).map(category => (
-                <a 
-                    href={`#${encodeURIComponent(category)}`}
-                    class="px-4 py-2 rounded-md bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] transition"
-                >
-                    {category}
-                </a>
-            ))}
-        </div>
-
-        <!-- 音乐内容 -->
-        {Object.entries(groupedMusic).map(([category, musicList]) => (
-            <section 
-                id={encodeURIComponent(category)}
-                class="scroll-mt-16 space-y-8 mb-12"
-            >
-                <h2 class="text-2xl font-bold border-b pb-2">{category}</h2>
-                {musicList.map(music => (
-                    <article class="space-y-4">
-                        {music.data.albums.map(album => (
-                            <div class="flex gap-6 p-4 bg-[var(--card-bg)] rounded-lg">
-                                <img 
-                                    src={album.cover || '/images/default-music-cover.jpg'} 
-                                    alt={album.title}
-                                    class="w-32 h-32 rounded-lg object-cover flex-shrink-0"
-                                />
-                                <div class="flex-1">
-                                    <h3 class="text-xl font-bold">{album.title}</h3>
-                                    <p class="text-gray-500 mb-4">{album.artist}</p>
-                                    <audio 
-                                        src={album.audio} 
-                                        controls
-                                        class="w-full"
-                                    ></audio>
-                                    <Markdown class="mt-4">
-                                        {music.body}
-                                    </Markdown>
-                                </div>
-                            </div>
-                        ))}
-                    </article>
-                ))}
-            </section>
-        ))}
+  <div class="card-base p-6">
+    <!-- 分类导航 -->
+    <div class="flex flex-wrap gap-2 mb-8 sticky top-4 z-10 bg-[var(--card-bg)] py-2">
+      {categories.map(([category]) => (
+        <a href={`#${category}`} class="px-4 py-2 rounded-md bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] transition">
+          {category}
+        </a>
+      ))}
     </div>
-</MainGridLayout>
 
-<script>
-// 平滑滚动处理
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(anchor.getAttribute('href'));
-        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-});
-</script>
+    <!-- 音乐内容 -->
+    {categories.map(([category, songs]) => (
+      <section id={category} class="scroll-mt-16 space-y-8 mb-12">
+        <h2 class="text-2xl font-bold border-b pb-2">{category}</h2>
+        {songs.map(song => (
+          <div class="flex gap-6 p-4 bg-[var(--card-bg)] rounded-lg">
+            <img src={song.cover} alt={song.title} class="w-32 h-32 rounded-lg object-cover flex-shrink-0"/>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold">{song.title}</h3>
+              <p class="text-gray-500 mb-4">{song.artist}</p>
+              <audio src={song.audio} controls class="w-full"></audio>
+              {song.rating && (
+                <div class="mt-2 text-yellow-400">
+                  评分：{[...Array(Math.floor(song.rating))].map(() => '⭐')}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </section>
+    ))}
+  </div>
+</MainGridLayout>

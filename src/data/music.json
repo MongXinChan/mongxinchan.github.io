@@ -1,0 +1,20 @@
+{
+	"categories": {
+		"华语音乐": [
+			{
+				"title": "亲爱的...我还不知道",
+				"artist": "张悬",
+				"cover": "/images/album1.jpg",
+				"audio": "/music/song1.mp3"
+			}
+		],
+		"欧美音乐": [
+			{
+				"title": "25",
+				"artist": "Adele",
+				"cover": "/images/adele.jpg",
+				"audio": "/music/hello.mp3"
+			}
+		]
+	}
+}

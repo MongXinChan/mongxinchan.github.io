@@ -26,9 +26,11 @@ const musicCollection = defineCollection({
 			z.object({
 				title: z.string(),
 				artist: z.string(),
+				audio: z.string(), // 音频路径改为必填
 				cover: z.string().optional(),
-				audio: z.string(),
-				published: z.date().optional().default(new Date()),
+				rating: z.number().min(0).max(5).optional(),
+				review: z.string().optional(),
+				published: z.coerce.date().optional().default(new Date()),
 			}),
 		),
 	}),
@@ -37,4 +39,5 @@ const musicCollection = defineCollection({
 export const collections = {
 	posts: postsCollection,
 	music: musicCollection,
+	// 新增spec集合
 };
