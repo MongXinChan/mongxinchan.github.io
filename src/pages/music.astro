@@ -1,6 +1,9 @@
 ---
-import musicData from "../data/music.json";
-import MainGridLayout from "../layouts/MainGridLayout.astro";
+import ArchivePanel from "@components/ArchivePanel.astro";
+import { UNCATEGORIZED } from "@constants/constants";
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 // 转换数据格式方便渲染
 const categories = Object.entries(musicData.categories);
@@ -28,11 +31,6 @@ const categories = Object.entries(musicData.categories);
               <h3 class="text-xl font-bold">{song.title}</h3>
               <p class="text-gray-500 mb-4">{song.artist}</p>
               <audio src={song.audio} controls class="w-full"></audio>
-              {song.rating && (
-                <div class="mt-2 text-yellow-400">
-                  评分：{[...Array(Math.floor(song.rating))].map(() => '⭐')}
-                </div>
-              )}
             </div>
           </div>
         ))}
