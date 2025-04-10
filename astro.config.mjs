@@ -26,11 +26,9 @@ export default defineConfig({
 	buildOptions: {
 		outputDir: new URL("./docs", import.meta.url), // 指定输出目录为 docs
 	},
-	image: {
-		service: "sharp",
-	},
 	trailingSlash: "always", // 确保所有路径都以斜杠结尾
 	integrations: [
+		sitemap(),
 		tailwind({
 			nesting: true,
 		}),
@@ -55,9 +53,6 @@ export default defineConfig({
 			},
 		}),
 		svelte(),
-		sitemap({
-			dest: new URL("./docs/sitemap-index.xml", import.meta.url), // 指定 sitemap 的输出路径
-		}),
 		Compress({
 			CSS: false,
 			Image: false,
