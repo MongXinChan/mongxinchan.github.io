@@ -25,7 +25,7 @@ export default defineConfig({
 	base: "/-Astro-Blog",
 	build: {
 		format: "directory",
-		dir: "site",
+		dir: "dist",
 	},
 	trailingSlash: "always",
 	integrations: [
