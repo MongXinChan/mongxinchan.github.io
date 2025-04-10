@@ -66,7 +66,7 @@ I donnot update in the markdown = =
 
 ![image-20250318004410701](.\pic\3.png)
 
-![](.\pic\4.png)
+![4png](.\pic\4.png)
 
 we see that the `Ubuntu-24.04` has been installed.
 
@@ -89,15 +89,15 @@ gcc --version
 
 Open the `vscode`(Downloaded)
 
-![](.\pic\7.png)
+![7png](.\pic\7.png)
 
 We use the `Ctrl`+`Alt`+`O` to command the system, and wait for a while to install the server of WSL
 
 If the connection is successful you will see:
 
-![](.\pic\8.png)
+![8png](.\pic\8.png)
 
-![](.\pic\9.png)
+![9png](.\pic\9.png)
 
 `/mnt/d/Code/Cplusplus/SUST Cpp course/` is a file path, typically used in a `Linux` system to indicate a directory within a mounted Windows file system. Here’s a breakdown of its components:
 
@@ -135,7 +135,7 @@ The default output executable file is called “a.exe”(Windows) or “a.out”
 
 **printf**(format-control-string, other-arguments) f**ormat-control-string** describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).
 
-![](.\pic\Picture.png)
+![Picture](.\pic\Picture.png)
 
 
 
@@ -226,4 +226,4 @@ We couldnot directly compile the `main.cpp` if we only compile the `main.cpp` ad
 
     打开生成的解决方案文件，并在 Visual Studio 中构建项目。
 
-![](.\pic\completed.png)
+![completed](.\pic\completed.png)

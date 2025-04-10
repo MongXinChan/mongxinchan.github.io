@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>MonX</title><description>罗德岛</description><link>https://mongxinchan.github.io/</link><language>zh_CN</language><item><title>Vue 3.0 快速上手教程</title><link>https://mongxinchan.github.io/posts/vue30/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/vue30/</guid><description>Vue 3 是 Vue.js 的最新版本，它带来了性能提升、更好的 TypeScript 支持以及新的 Composition API 等特性。本教程是基于 Vue 3 的快速上手教程，帮助你快速掌握其核心语法和功能。</description><pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>MonX</title><description>罗德岛</description><link>https://loners.site/</link><language>zh_CN</language><item><title>Vue 3.0 快速上手教程</title><link>https://loners.site/posts/vue30/</link><guid isPermaLink="true">https://loners.site/posts/vue30/</guid><description>Vue 3 是 Vue.js 的最新版本，它带来了性能提升、更好的 TypeScript 支持以及新的 Composition API 等特性。本教程是基于 Vue 3 的快速上手教程，帮助你快速掌握其核心语法和功能。</description><pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;[!NOTE]
 本教程假设你已经具备基本的 JavaScript 和 HTML 知识。&lt;/p&gt;
 &lt;p&gt;你可以通过 &lt;a href=&quot;https://v3.vuejs.org/guide/introduction.html&quot;&gt;Vue.js 官方文档&lt;/a&gt;了解更多关于 Vue 3 的详细信息。&lt;/p&gt;
@@ -275,7 +275,7 @@ button {
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;总结&lt;/h1&gt;
 &lt;p&gt;通过以上内容，你已经掌握了 Vue 3 的基本语法和功能，包括 &lt;code&gt;&amp;lt;script setup&amp;gt;&lt;/code&gt;、响应式数据、计算属性、侦听器和组合式 API。这些功能将帮助你快速构建动态的用户界面。接下来，你可以通过阅读官方文档和实践更多项目，进一步提升你的 Vue.js 技能。&lt;/p&gt;
-</content:encoded></item><item><title>Vue 2.0 快速上手教程</title><link>https://mongxinchan.github.io/posts/vue20/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/vue20/</guid><description>Vue.js 是一个用于构建用户界面的渐进式框架，它通过声明式的数据绑定和组件系统，简化了 DOM 操作和页面渲染。本教程将帮助你快速上手 Vue 2.0，并了解其基本概念和用法。</description><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+</content:encoded></item><item><title>Vue 2.0 快速上手教程</title><link>https://loners.site/posts/vue20/</link><guid isPermaLink="true">https://loners.site/posts/vue20/</guid><description>Vue.js 是一个用于构建用户界面的渐进式框架，它通过声明式的数据绑定和组件系统，简化了 DOM 操作和页面渲染。本教程将帮助你快速上手 Vue 2.0，并了解其基本概念和用法。</description><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;[!NOTE]&lt;/p&gt;
 &lt;p&gt;本教程假设你已经具备基本的 HTML、CSS 和 JavaScript 知识。如果你对这些知识不熟悉，可以先学习相关的教程。&lt;/p&gt;
 &lt;p&gt;本笔记基于Bilibili课程&lt;a href=&quot;https://www.bilibili.com/video/BV1oj411D7jk&quot;&gt;30分钟学会Vue之核心语法&lt;/a&gt;&lt;/p&gt;
@@ -532,7 +532,7 @@ new Vue({
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;总结&lt;/h1&gt;
 &lt;p&gt;通过以上内容，你已经掌握了 Vue 2.0 的基本语法和功能，包括响应式数据、插值表达式、指令、计算属性、侦听器和修饰符。这些功能将帮助你快速构建动态的用户界面。接下来，你可以通过阅读官方文档和实践更多项目，进一步提升你的 Vue.js 技能。&lt;/p&gt;
-</content:encoded></item><item><title>CS205 Lab01</title><link>https://mongxinchan.github.io/posts/cs205-lab01/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cs205-lab01/</guid><description>Welcome to my CS205 lecture notes!</description><pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+</content:encoded></item><item><title>CS205 Lab01</title><link>https://loners.site/posts/cs205-lab01/</link><guid isPermaLink="true">https://loners.site/posts/cs205-lab01/</guid><description>Welcome to my CS205 lecture notes!</description><pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;[!TIP]&lt;/p&gt;
 &lt;p&gt;Welcome to my CS205 lecture notes! Because the lecture is not in English, I will try my best to translate it.
 And at the same time, the &lt;code&gt;PPT&lt;/code&gt;,&lt;code&gt;lab-file&lt;/code&gt; also use the English,I will write &lt;strong&gt;the English notes but not all.&lt;/strong&gt;&lt;/p&gt;
@@ -566,7 +566,7 @@ wsl -d Ubuntu-24.04
 &lt;pre&gt;&lt;code&gt;I donnot update in the markdown = =
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;.%5Cpic%5C3.png&quot; alt=&quot;image-20250318004410701&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C4.png&quot; alt=&quot;4png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;we see that the &lt;code&gt;Ubuntu-24.04&lt;/code&gt; has been installed.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;.%5Cpic%5C5.png&quot; alt=&quot;image-20250318004758417&quot; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt update
@@ -578,11 +578,11 @@ sudo apt install g++ -y
 &lt;p&gt;&lt;img src=&quot;.%5Cpic%5C6.png&quot; alt=&quot;image-20250318090019674&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task 2 Use the WSL in visual studio code&lt;/h2&gt;
 &lt;p&gt;Open the &lt;code&gt;vscode&lt;/code&gt;(Downloaded)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C7.png&quot; alt=&quot;7png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;We use the &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt; to command the system, and wait for a while to install the server of WSL&lt;/p&gt;
 &lt;p&gt;If the connection is successful you will see:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C8.png&quot; alt=&quot;8png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C9.png&quot; alt=&quot;9png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/mnt/d/Code/Cplusplus/SUST Cpp course/&lt;/code&gt; is a file path, typically used in a &lt;code&gt;Linux&lt;/code&gt; system to indicate a directory within a mounted Windows file system. Here’s a breakdown of its components:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;/mnt/d&lt;/code&gt;&lt;/strong&gt;: In Linux, &lt;code&gt;/mnt&lt;/code&gt; is a mount point directory commonly used for mounting external storage devices or partitions. &lt;code&gt;/mnt/d&lt;/code&gt; indicates that the D drive from a Windows system is mounted here.&lt;/li&gt;
@@ -600,7 +600,7 @@ sudo apt install g++ -y
 &lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep5.png&quot; alt=&quot;image-20250404172756641&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task# 4Terminal Output&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;printf&lt;/strong&gt;(format-control-string, other-arguments) f&lt;strong&gt;ormat-control-string&lt;/strong&gt; describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CPicture.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CPicture.png&quot; alt=&quot;Picture&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task# 5 Execrise&lt;/h2&gt;
 &lt;p&gt;We couldnot directly compile the &lt;code&gt;main.cpp&lt;/code&gt; if we only compile the &lt;code&gt;main.cpp&lt;/code&gt; advoke &lt;code&gt;g++ -o main main.cpp &amp;amp;&amp;amp; ./main&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileError.png&quot; alt=&quot;image-20250404173852592&quot; /&gt;&lt;/p&gt;
@@ -678,15 +678,15 @@ cd build
 &lt;p&gt;打开生成的解决方案文件，并在 Visual Studio 中构建项目。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cpic%5Ccompleted.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content:encoded></item><item><title>CS61B Lecture 1</title><link>https://mongxinchan.github.io/posts/cs61b-lecture1/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cs61b-lecture1/</guid><description>Welcome to my CS61B lecture notes!</description><pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5Ccompleted.png&quot; alt=&quot;completed&quot; /&gt;&lt;/p&gt;
+</content:encoded></item><item><title>CS61B Lecture 1</title><link>https://loners.site/posts/cs61b-lecture1/</link><guid isPermaLink="true">https://loners.site/posts/cs61b-lecture1/</guid><description>Welcome to my CS61B lecture notes!</description><pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;[!TIP]&lt;/p&gt;
 &lt;p&gt;Welcome to my CS61B lecture notes!
 In this notice, I will be sharing my notes and resources related to &lt;a href=&quot;https://sp24.datastructur.es/&quot;&gt;the course&lt;/a&gt; &lt;code&gt;CS61B: Data Structures&lt;/code&gt; taught by Justin Yokota and Peyrin Kao .
 I will be posting my lecture notes, assignments, and other materials that I have completed during the course. I hope that these notes will be helpful to others who are taking the course. If you have any questions or feedback, please feel free to contact me. Thank you for your attention.&lt;/p&gt;
 &lt;p&gt;If you wanna read the Chinese Edition,&lt;a href=&quot;#&quot;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</content:encoded></item><item><title>虚函数：C++ 多态的核心</title><link>https://mongxinchan.github.io/posts/cpp-%E8%99%9A%E5%87%BD%E6%95%B0/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cpp-%E8%99%9A%E5%87%BD%E6%95%B0/</guid><description>在面向对象编程中，多态是一种强大的特性，它允许我们通过基类的接口调用派生类的实现。C++ 中的虚函数（Virtual Function）是实现多态的关键机制。虚函数的设计理念源自于“重载函数”，但它们的目标和实现方式有所不同。重载函数主要用于编译时的多态（静态绑定），而虚函数则用于运行时的多态（动态绑定）。</description><pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>虚函数：C++ 多态的核心</title><link>https://loners.site/posts/cpp-%E8%99%9A%E5%87%BD%E6%95%B0/</link><guid isPermaLink="true">https://loners.site/posts/cpp-%E8%99%9A%E5%87%BD%E6%95%B0/</guid><description>在面向对象编程中，多态是一种强大的特性，它允许我们通过基类的接口调用派生类的实现。C++ 中的虚函数（Virtual Function）是实现多态的关键机制。虚函数的设计理念源自于“重载函数”，但它们的目标和实现方式有所不同。重载函数主要用于编译时的多态（静态绑定），而虚函数则用于运行时的多态（动态绑定）。</description><pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;在面向对象编程中，多态是一种强大的特性，它允许我们通过基类的接口调用派生类的实现。C++ 中的虚函数（Virtual Function）是实现多态的关键机制。虚函数的设计理念源自于“重载函数”，但它们的目标和实现方式有所不同。重载函数主要用于编译时的多态（静态绑定），而虚函数则用于运行时的多态（动态绑定）。&lt;/p&gt;
 &lt;p&gt;虚函数的实现依赖于一个隐藏的数据结构——虚表（Virtual Table，简称 vtable）。虚表是一个函数指针数组，存储了类中所有虚函数的地址。每个对象都有一个指向其类虚表的指针（vptr），通过 vptr 可以访问虚表。&lt;/p&gt;
 &lt;p&gt;理解虚函数和虚表的工作原理，对于深入掌握 C++ 的对象模型和性能优化至关重要。&lt;/p&gt;
@@ -932,7 +932,7 @@ int main() {
 &lt;p&gt;虚函数是 C++ 中实现多态的核心机制。通过虚函数，派生类可以重写基类的函数实现，从而实现动态绑定。虚函数的设计理念源自于“重载函数”，但它们的目标和实现方式有所不同。虚函数的实现依赖于虚表（vtable）和虚指针（vptr）。&lt;/p&gt;
 &lt;p&gt;纯虚函数和抽象类是虚函数的高级应用，它们允许我们定义接口类，确保派生类实现特定的函数。虚表是虚函数实现的基础，它存储了类中所有虚函数的地址。每个对象都有一个指向其类虚表的指针（vptr），通过 vptr 可以访问虚表。&lt;/p&gt;
 &lt;p&gt;理解虚函数和虚表的工作原理，有助于我们更好地掌握 C++ 的对象模型和性能优化。&lt;/p&gt;
-</content:encoded></item><item><title>CMake：自动化构建的利器</title><link>https://mongxinchan.github.io/posts/cmake/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cmake/</guid><description>`Makefile`跟系统的编译有很重要的相关，在不同的系统上`Makefile`编译出来的文件是不相同的，这时候对于我们跨平台解决问题有一个致命问题，好在我们有`CMake`来解决这一难题。</description><pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>CMake：自动化构建的利器</title><link>https://loners.site/posts/cmake/</link><guid isPermaLink="true">https://loners.site/posts/cmake/</guid><description>`Makefile`跟系统的编译有很重要的相关，在不同的系统上`Makefile`编译出来的文件是不相同的，这时候对于我们跨平台解决问题有一个致命问题，好在我们有`CMake`来解决这一难题。</description><pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;在现代软件开发中，构建系统是不可或缺的一部分。CMake 作为一种跨平台的自动化构建系统生成器，极大地简化了项目的编译和构建过程。与 Makefile 类似，CMake 通过编写配置文件（CMakeLists.txt）来定义项目的构建规则，但它的优势在于更高的可移植性和更强大的功能。CMake 可以生成多种构建系统，如 Makefile、Visual Studio 解决方案等，从而满足不同开发环境的需求。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[!TIP]
@@ -1094,7 +1094,7 @@ target_include_directories(hello PRIVATE ${CMAKE_SOURCE_DIR})
 &lt;li&gt;&lt;strong&gt;强大的功能&lt;/strong&gt;：支持复杂的项目结构、依赖管理和自定义目标。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;在实际项目中，使用 CMake 可以显著提高开发效率，减少重复劳动，并确保构建过程的一致性。&lt;/p&gt;
-</content:encoded></item><item><title>Lambda 表达式与函数对象概述</title><link>https://mongxinchan.github.io/posts/cpp-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cpp-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid><description>Lambda 表达式和函数对象是 C++11 引入的非常强大的特性，它们极大地简化了函数的定义和使用方式。就像一把多功能瑞士军刀，有了它们，我们可以在代码中更灵活地处理函数逻辑，无论是简单的回调函数，还是复杂的算法实现，都可以轻松应对。</description><pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>Lambda 表达式与函数对象概述</title><link>https://loners.site/posts/cpp-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link><guid isPermaLink="true">https://loners.site/posts/cpp-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid><description>Lambda 表达式和函数对象是 C++11 引入的非常强大的特性，它们极大地简化了函数的定义和使用方式。就像一把多功能瑞士军刀，有了它们，我们可以在代码中更灵活地处理函数逻辑，无论是简单的回调函数，还是复杂的算法实现，都可以轻松应对。</description><pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;Lambda 表达式和函数对象是 C++11 引入的非常强大的特性，它们极大地简化了函数的定义和使用方式。就像一把多功能瑞士军刀，有了它们，我们可以在代码中更灵活地处理函数逻辑，无论是简单的回调函数，还是复杂的算法实现，都可以轻松应对。接下来，让我们深入了解一下 Lambda 表达式和函数对象的奥秘。&lt;/p&gt;
 &lt;h1&gt;Lambda 表达式(Lambda Expressions)&lt;/h1&gt;
 &lt;p&gt;Lambda 表达式是一种匿名函数，它允许我们在代码中直接定义函数逻辑，而无需单独声明一个函数。Lambda 表达式的核心是对函数对象的封装，它提供了一种简洁的方式来实现函数式编程。&lt;/p&gt;
@@ -1241,7 +1241,7 @@ int main() {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</content:encoded></item><item><title>Makefile</title><link>https://mongxinchan.github.io/posts/makefile/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/makefile/</guid><description>Makefile带来的好处就是——“自动化编译”，一旦写好，只需要一个Make命令，整个工程完全自动编译，极大的提高了软件开发的效率。make是一个命令工具，是一个解释makefile中指令的命令工具，一般来说，大多数的IDE都有这个命令，比如：Delphi的make，Visual C++的nmake，Linux下GNU的make。可见，Makefile都成为了一种在工程方面的编译方法。</description><pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>Makefile</title><link>https://loners.site/posts/makefile/</link><guid isPermaLink="true">https://loners.site/posts/makefile/</guid><description>Makefile带来的好处就是——“自动化编译”，一旦写好，只需要一个Make命令，整个工程完全自动编译，极大的提高了软件开发的效率。make是一个命令工具，是一个解释makefile中指令的命令工具，一般来说，大多数的IDE都有这个命令，比如：Delphi的make，Visual C++的nmake，Linux下GNU的make。可见，Makefile都成为了一种在工程方面的编译方法。</description><pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;Makefile带来的好处就是——“自动化编译”，一旦写好，只需要一个Make命令，整个工程完全自动编译，极大的提高了软件开发的效率。make是一个命令工具，是一个解释makefile中指令的命令工具，一般来说，大多数的IDE都有这个命令，比如：Delphi的make，Visual C++的nmake，Linux下GNU的make。可见，Makefile都成为了一种在工程方面的编译方法。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[!TIP]
@@ -1393,7 +1393,7 @@ clean:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;小结&lt;/h1&gt;
 &lt;p&gt;写项目的时候我们如果采用&lt;code&gt;Makefile&lt;/code&gt;方法，我们的脚本仅仅需要写一次，而用gcc命令的话，我们每次都需要重新写一遍。&lt;/p&gt;
-</content:encoded></item><item><title>重载函数</title><link>https://mongxinchan.github.io/posts/cpp-%E9%87%8D%E8%BD%BD%E5%87%BD%E6%95%B0/</link><guid isPermaLink="true">https://mongxinchan.github.io/posts/cpp-%E9%87%8D%E8%BD%BD%E5%87%BD%E6%95%B0/</guid><description>`Cpp` 的重载函数是依据于 `Argument-dependent lookup`（也称作 ADL），也就是说，即使有相同的函数名，但是我们也依据参数列表的不同来调用，这涉及到编译原理。我们知道，利用 `.cpp` 文件可以编译成 `.obj` 文件，再通过链接器链接变成 `.exe` 文件，而 `Cpp` 的重载特性就是从编译器下手的。</description><pubDate>Thu, 21 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>重载函数</title><link>https://loners.site/posts/cpp-%E9%87%8D%E8%BD%BD%E5%87%BD%E6%95%B0/</link><guid isPermaLink="true">https://loners.site/posts/cpp-%E9%87%8D%E8%BD%BD%E5%87%BD%E6%95%B0/</guid><description>`Cpp` 的重载函数是依据于 `Argument-dependent lookup`（也称作 ADL），也就是说，即使有相同的函数名，但是我们也依据参数列表的不同来调用，这涉及到编译原理。我们知道，利用 `.cpp` 文件可以编译成 `.obj` 文件，再通过链接器链接变成 `.exe` 文件，而 `Cpp` 的重载特性就是从编译器下手的。</description><pubDate>Thu, 21 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;我们为什么要重载？搞清楚这个问题我们要回顾到 &lt;code&gt;C&lt;/code&gt; 中，&lt;code&gt;C99&lt;/code&gt; 中有一个 &lt;code&gt;&amp;lt;math.h&amp;gt;&lt;/code&gt; 头文件，里面定义了不同的四舍五入方法：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;

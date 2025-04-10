@@ -26,7 +26,7 @@ export default defineConfig({
 		format: "directory",
 		dir: "dist",
 	},
-	root: './dist',
+	root: './',
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
