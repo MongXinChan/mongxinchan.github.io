@@ -553,11 +553,11 @@ So I do this :&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;wsl -l -o
 wsl --install -d Ubuntu-20.04
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C1.png&quot; alt=&quot;image-20250318003050449&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C1.png&quot; alt=&quot;image-20250318003050449&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;That&apos;s my successful examples.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;DISM.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All /NoRestart
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C2.png&quot; alt=&quot;image-20250318003517641&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C2.png&quot; alt=&quot;image-20250318003517641&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;use the &lt;code&gt;bash&lt;/code&gt; to start the system:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;wsl -l -v
 wsl -d Ubuntu-24.04
@@ -565,45 +565,45 @@ wsl -d Ubuntu-24.04
 &lt;p&gt;the username and password is&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;I donnot update in the markdown = =
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C3.png&quot; alt=&quot;image-20250318004410701&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C4.png&quot; alt=&quot;4png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C3.png&quot; alt=&quot;image-20250318004410701&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C4.png&quot; alt=&quot;4png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;we see that the &lt;code&gt;Ubuntu-24.04&lt;/code&gt; has been installed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C5.png&quot; alt=&quot;image-20250318004758417&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C5.png&quot; alt=&quot;image-20250318004758417&quot; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt update
 sudo apt install g++ -y
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;we use the commond to check their version up&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;gcc --version
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C6.png&quot; alt=&quot;image-20250318090019674&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C6.png&quot; alt=&quot;image-20250318090019674&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task 2 Use the WSL in visual studio code&lt;/h2&gt;
 &lt;p&gt;Open the &lt;code&gt;vscode&lt;/code&gt;(Downloaded)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C7.png&quot; alt=&quot;7png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C7.png&quot; alt=&quot;7png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;We use the &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt; to command the system, and wait for a while to install the server of WSL&lt;/p&gt;
 &lt;p&gt;If the connection is successful you will see:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C8.png&quot; alt=&quot;8png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C9.png&quot; alt=&quot;9png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C8.png&quot; alt=&quot;8png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5C9.png&quot; alt=&quot;9png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/mnt/d/Code/Cplusplus/SUST Cpp course/&lt;/code&gt; is a file path, typically used in a &lt;code&gt;Linux&lt;/code&gt; system to indicate a directory within a mounted Windows file system. Here’s a breakdown of its components:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;/mnt/d&lt;/code&gt;&lt;/strong&gt;: In Linux, &lt;code&gt;/mnt&lt;/code&gt; is a mount point directory commonly used for mounting external storage devices or partitions. &lt;code&gt;/mnt/d&lt;/code&gt; indicates that the D drive from a Windows system is mounted here.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Task 3 Compile,Link and Run C/C++ Programs&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileProcession.png&quot; alt=&quot;image-20250404170927050&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileFileStep.png&quot; alt=&quot;image-20250404171355890&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileProcession.png&quot; alt=&quot;image-20250404170927050&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep.png&quot; alt=&quot;image-20250404171355890&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The step called &lt;code&gt;Compile&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileFileStep2.png&quot; alt=&quot;image-20250404171509663&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep2.png&quot; alt=&quot;image-20250404171509663&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;We create  the &lt;code&gt;.exe&lt;/code&gt; post-name-file. The step called &lt;code&gt;Linking&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileFileStep3.png&quot; alt=&quot;image-20250404171802256&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep3.png&quot; alt=&quot;image-20250404171802256&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The default output executable file is called “a.exe”(Windows) or “a.out”(Unix  and Mac OS) if you don’t specify the name in compiling and linking step.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileFileStep4.png&quot; alt=&quot;image-20250404171945336&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep4.png&quot; alt=&quot;image-20250404171945336&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You need to use &lt;code&gt;g++&lt;/code&gt; to compile C++ program. The &lt;code&gt;-o&lt;/code&gt; option is used to &lt;code&gt;specify the output file name&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileFileStep5.png&quot; alt=&quot;image-20250404172756641&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileFileStep5.png&quot; alt=&quot;image-20250404172756641&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task# 4Terminal Output&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;printf&lt;/strong&gt;(format-control-string, other-arguments) f&lt;strong&gt;ormat-control-string&lt;/strong&gt; describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CPicture.png&quot; alt=&quot;Picture&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CPicture.png&quot; alt=&quot;Picture&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Task# 5 Execrise&lt;/h2&gt;
 &lt;p&gt;We couldnot directly compile the &lt;code&gt;main.cpp&lt;/code&gt; if we only compile the &lt;code&gt;main.cpp&lt;/code&gt; advoke &lt;code&gt;g++ -o main main.cpp &amp;amp;&amp;amp; ./main&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CcompileError.png&quot; alt=&quot;image-20250404173852592&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5CcompileError.png&quot; alt=&quot;image-20250404173852592&quot; /&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;方法&lt;/p&gt;
@@ -678,7 +678,7 @@ cd build
 &lt;p&gt;打开生成的解决方案文件，并在 Visual Studio 中构建项目。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Ccompleted.png&quot; alt=&quot;completed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cpic%5Ccompleted.png&quot; alt=&quot;completed&quot; /&gt;&lt;/p&gt;
 </content:encoded></item><item><title>CS61B Lecture 1</title><link>https://loners.site/posts/cs61b-lecture1/</link><guid isPermaLink="true">https://loners.site/posts/cs61b-lecture1/</guid><description>Welcome to my CS61B lecture notes!</description><pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;[!TIP]&lt;/p&gt;
 &lt;p&gt;Welcome to my CS61B lecture notes!

@@ -39,7 +39,7 @@ wsl -l -o
 wsl --install -d Ubuntu-20.04
 ```
 
-![image-20250318003050449](.\src\content\posts\CS205Lab01\pic\1.png)
+![image-20250318003050449](.\pic\1.png)
 
 That's my successful examples.
 
@@ -47,7 +47,7 @@ That's my successful examples.
 DISM.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All /NoRestart
 ```
 
-![image-20250318003517641](.\src\content\posts\CS205Lab01\pic\2.png)
+![image-20250318003517641](.\pic\2.png)
 
 use the `bash` to start the system:
 
