@@ -21,12 +21,12 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://mongxinchan.github.io",
-	// base: "/-Astro-Blog",
+	site: 'https://loners.site',
 	build: {
 		format: "directory",
 		dir: "dist",
 	},
+	root: './dist',
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
