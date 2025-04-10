@@ -39,7 +39,7 @@ wsl -l -o
 wsl --install -d Ubuntu-20.04
 ```
 
-![image-20250318003050449](.\pic\1.png)
+![image-20250318003050449](.\1.png)
 
 That's my successful examples.
 
@@ -47,7 +47,7 @@ That's my successful examples.
 DISM.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All /NoRestart
 ```
 
-![image-20250318003517641](.\pic\2.png)
+![image-20250318003517641](.\2.png)
 
 use the `bash` to start the system:
 
@@ -64,13 +64,13 @@ the username and password is
 I donnot update in the markdown = =
 ```
 
-![image-20250318004410701](.\pic\3.png)
+![image-20250318004410701](.\3.png)
 
-![4png](.\pic\4.png)
+![4png](.\4.png)
 
 we see that the `Ubuntu-24.04` has been installed.
 
-![image-20250318004758417](.\pic\5.png)
+![image-20250318004758417](.\5.png)
 
 ```bash
 sudo apt update
@@ -83,21 +83,21 @@ we use the commond to check their version up
 gcc --version
 ```
 
-![image-20250318090019674](.\pic\6.png)
+![image-20250318090019674](.\6.png)
 
 ## Task 2 Use the WSL in visual studio code
 
 Open the `vscode`(Downloaded)
 
-![7png](.\pic\7.png)
+![7png](.\7.png)
 
 We use the `Ctrl`+`Alt`+`O` to command the system, and wait for a while to install the server of WSL
 
 If the connection is successful you will see:
 
-![8png](.\pic\8.png)
+![8png](.\8.png)
 
-![9png](.\pic\9.png)
+![9png](.\9.png)
 
 `/mnt/d/Code/Cplusplus/SUST Cpp course/` is a file path, typically used in a `Linux` system to indicate a directory within a mounted Windows file system. Here’s a breakdown of its components:
 
@@ -107,35 +107,35 @@ If the connection is successful you will see:
 
 ## Task 3 Compile,Link and Run C/C++ Programs
 
-![image-20250404170927050](.\pic\compileProcession.png)
+![image-20250404170927050](.\compileProcession.png)
 
 
 
-![image-20250404171355890](.\pic\compileFileStep.png)
+![image-20250404171355890](.\compileFileStep.png)
 
 The step called `Compile`
 
-![image-20250404171509663](.\pic\compileFileStep2.png)
+![image-20250404171509663](.\compileFileStep2.png)
 
 We create  the `.exe` post-name-file. The step called `Linking`
 
-![image-20250404171802256](.\pic\compileFileStep3.png)
+![image-20250404171802256](.\compileFileStep3.png)
 
 The default output executable file is called “a.exe”(Windows) or “a.out”(Unix  and Mac OS) if you don’t specify the name in compiling and linking step.
 
-![image-20250404171945336](.\pic\compileFileStep4.png)
+![image-20250404171945336](.\compileFileStep4.png)
 
 **You need to use `g++` to compile C++ program. The `-o` option is used to `specify the output file name`.**
 
 
 
-![image-20250404172756641](.\pic\compileFileStep5.png)
+![image-20250404172756641](.\compileFileStep5.png)
 
 ## Task# 4Terminal Output
 
 **printf**(format-control-string, other-arguments) f**ormat-control-string** describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).
 
-![Picture](.\pic\Picture.png)
+![Picture](.\Picture.png)
 
 
 
@@ -143,7 +143,7 @@ The default output executable file is called “a.exe”(Windows) or “a.out”
 
 We couldnot directly compile the `main.cpp` if we only compile the `main.cpp` advoke `g++ -o main main.cpp && ./main`
 
-![image-20250404173852592](.\pic\compileError.png)
+![image-20250404173852592](.\compileError.png)
 
 1. 方法
 
@@ -226,4 +226,4 @@ We couldnot directly compile the `main.cpp` if we only compile the `main.cpp` ad
 
     打开生成的解决方案文件，并在 Visual Studio 中构建项目。
 
-![completed](.\pic\completed.png)
+![completed](.\completed.png)
