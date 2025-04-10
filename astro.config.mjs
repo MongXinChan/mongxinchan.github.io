@@ -9,7 +9,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components"; /* Render the custom directive content */
 import rehypeKatex from "rehype-katex";
 import rehypeSlug from "rehype-slug";
-import remarkDirective from "remark-directive";
+import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
@@ -21,20 +21,22 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	output: "static",
 	site: "https://loners.site",
-	buildOptions: {
-		outputDir: new URL("./docs", import.meta.url), // 指定输出目录为 docs
+	build: {
+		format: "directory",
+		dir: "dist",
 	},
-	trailingSlash: "always", // 确保所有路径都以斜杠结尾
+	root: "./",
+	trailingSlash: "always",
 	integrations: [
-		sitemap(),
 		tailwind({
 			nesting: true,
 		}),
 		swup({
 			theme: false,
-			animationClass: "transition-swup-",
+			animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
+			// the default value `transition-` cause transition delay
+			// when the Tailwind class `transition-all` is used
 			containers: ["main", "#toc"],
 			smoothScrolling: true,
 			cache: true,
@@ -53,19 +55,12 @@ export default defineConfig({
 			},
 		}),
 		svelte(),
+		sitemap(),
 		Compress({
 			CSS: false,
 			Image: false,
 			Action: {
-				Passed: async () => true,
-			},
-			Options: {
-				CSS: {
-					enabled: false,
-				},
-				Image: {
-					enabled: false,
-				},
+				Passed: async () => true, // https://github.com/PlayForm/Compress/issues/376
 			},
 		}),
 	],
@@ -124,6 +119,7 @@ export default defineConfig({
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {
+					// temporarily suppress this warning
 					if (
 						warning.message.includes("is dynamically imported by") &&
 						warning.message.includes("but also statically imported by")
