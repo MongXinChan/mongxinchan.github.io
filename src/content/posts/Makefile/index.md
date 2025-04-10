@@ -7,7 +7,7 @@ image: './img.png'
 tags: [ComputerScience,ProgramDesign,Cpp,Linux,Ubuntu ]
 category: 'ComputerScience''中文'
 draft: false 
-lang: zh_cn
+lang: zh_CN
 ---
 # 前言
 
@@ -77,14 +77,14 @@ int factorial(int n);
 
 进入learn_makefile生成可执行程序文件`main`
 
-```g++
+```bash
 cd learn_makefile
 g++ main.cpp factorial.cpp printhello.cpp -o main
 ./main
 ```
 
 逐个**编译**：
-```g++
+```bash
 g++ main.cpp -c
 g++ factorial.cpp -c
 g++ helloprint.cpp -c
@@ -92,13 +92,13 @@ g++ helloprint.cpp -c
 
 再进行**链接**：
 
-```g++
+```bash
 g++ *.o -o main
 ```
 
 我们再用`g++`来运行
 
-```g++
+```bash
 ./main
 ```
 
