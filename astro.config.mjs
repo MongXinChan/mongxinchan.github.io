@@ -23,6 +23,10 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 export default defineConfig({
 	site: "https://mongxinchan.github.io",
 	base: "/-Astro-Blog",
+	build: {
+		format: "directory",
+		dir: "_site",
+	},
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
