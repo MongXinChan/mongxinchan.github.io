@@ -6,7 +6,6 @@ description: 'The lecture shows some basic knowledge of Java.And the debugging o
 image: ''
 tags: [ComputerScience,DataStructures,Java ]
 category: 'ComputerScience''English'
-draft: false
 lang: en
 ---
 >[!TIP]

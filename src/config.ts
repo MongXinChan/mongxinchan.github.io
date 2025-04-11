@@ -44,18 +44,18 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
-		{
-			name: "音乐", // 导航栏显示名称
-			url: "/music/", // 对应页面路由
-		},
+		// {
+		// 	name: "音乐", // 导航栏显示名称
+		// 	url: "/music/", // 对应页面路由
+		// },
 		{
 			name: "电影",
 			url: "/movie/",
 		},
-		{
-			name: "友链",
-			url: "/links/",
-		},
+		// {
+		// 	name: "友链",
+		// 	url: "/links/",
+		// },
 		{
 			name: "RSS",
 			url: "/rss.xml",

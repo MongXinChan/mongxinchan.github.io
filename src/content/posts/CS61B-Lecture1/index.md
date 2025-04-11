@@ -6,7 +6,6 @@ description: 'Welcome to my CS61B lecture notes!'
 image: ''
 tags: [ComputerScience,DataStructures,Java ]
 category: 'ComputerScience''English'
-draft: false
 lang: en
 ---
 >[!TIP]
@@ -385,5 +384,7 @@ int main() {
 
 # Some words in the end:
 As a student from China, I am deeply impressed by the content of CS61B. This is truly what computer science education should be—focusing on the essence of the field rather than fixating on syntax or rote memorization for exams. It often makes me reflect on the common critique that university education is disconnected from real-world demands. The root of the problem lies in the stagnation of curricula.
+
 In many domestic contexts, outdated course content persists for several reasons. First, revising syllabi would require instructors to redesign their teaching materials, which increases their workload and complicates lesson preparation. Second, students might struggle with higher failure rates if the content becomes more challenging. As a result, universities and instructors often prefer to maintain the status quo, perpetuating a cycle of outdated knowledge. This "path dependency" has caused a growing disconnect between university curricula and the demands of the modern world.
+
 This is one of the reasons I am committed to studying open courses like CS61B. By engaging with curricula that emphasize both theory and practical application, I aim to bridge the gaps in domestic education and gain a deeper understanding of the core principles and real-world applications of computer science. This learning journey is not only about personal growth but also a reflection on and response to the current state of education.
