@@ -55,7 +55,7 @@ lang: zh_CN
 
 以下是 Spotify 工程博客中关于他们软件方法的一个例子。他们拥有超过 10 亿行代码，其中 6000 万行用于生产环境，由数千个组件组成。
 
-![](.\pic\Spotify-engineers-vs-software-components.png)
+![](./pic/Spotify-engineers-vs-software-components.png)
 
 *图示：图表显示了从 2015 年到 2021 年 Spotify 的工程师数量（绿色）和组件数量（紫色）的增长趋势。组件数量的显著增长反映了软件复杂性的增加。*
 
