@@ -1,7 +1,7 @@
 ---
 title: "[C++] 代码规范手册"
 published: 2025-04-22
-updated: 2025-04-23
+updated: 2025-04-22
 description: '本规范继承Google的C++代码规范'
 image: ''
 tags: [ComputerScience,ProgramDesign,Cpp]
