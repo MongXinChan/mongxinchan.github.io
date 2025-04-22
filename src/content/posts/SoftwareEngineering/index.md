@@ -114,7 +114,7 @@ Retool 是一家帮助开发者构建内部工具的公司。我在 2022 年秋�
 **使用工作流（Case Workflow）**
 
 
-![](./pic/WorkFlow.png)
+![](./pic/workFlow.png)
 
 
 **设计资源配置**
