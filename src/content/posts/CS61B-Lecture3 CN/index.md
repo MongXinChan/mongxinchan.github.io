@@ -18,7 +18,7 @@ lang: zh_CN
 
 **问题引入**
 
-![](./question.png)
+![](./Question.png)
 
 上面两个代码中，是否b的修改会影响到a的数值？而x的修改是否会影响到y的数值？
 
