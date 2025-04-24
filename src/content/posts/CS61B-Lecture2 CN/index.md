@@ -16,7 +16,7 @@ lang: zh_CN
 > 我会发布我在课程期间完成的讲座笔记、作业和其他材料。我希望这些笔记能对正在修这门课的其他人有所帮助。如果你有任何问题或反馈，请随时联系我。感谢你的关注。
 > 如果你想阅读英文版，请点击[这里](https://www.loners.site/posts/cs61b-lecture2/)。
 
-# CS61B 第2讲：类与实体，及调试入门
+# 引入
 
 **Dog.java**
 ```java
@@ -40,10 +40,17 @@ public class DogLauncher {
 
 当我们运行 `DogLauncher.java` 时，它会调用 `Dog` 类并输出 "Bark!"。这很好，因为它允许我们使用不同的类将复杂的代码分解成更小的部分。
 
-## 方法与类
+# 方法与类
+
 - 每个方法（也称为函数）都与某个类相关联。
 - 要运行一个类，我们必须定义一个 `main` 方法。
 - 并非所有类都有 `main` 方法！
+
+> [!TIP]
+>
+> 快捷键运行
+>
+> - 利用`control + shift + .` 快捷键运行
 
 **创建实例**
 在编写方法和类时，我们通常希望模拟现实世界的特征。例如，每只狗的叫声可能不同，每个学生对铃声的反应也可能不同。
@@ -72,6 +79,7 @@ public class Dog {
 ```
 
 **带有实例的 DogLauncher.java**
+
 ```java
 package lec2_intro2;
 public class DogLauncher {
@@ -83,14 +91,17 @@ public class DogLauncher {
 }
 ```
 
-**对象实例化**
-类不仅可以包含函数（方法），还可以包含数据。例如，我们可以为每个 `Dog` 添加一个 `size` 变量。
-
-**类实例化**
-- 我们创建一个单一的 `Dog` 类，然后创建这个 `Dog` 的实例。
-- 这些实例也被称为“对象”。
-- 类提供了一个所有 `Dog` 对象都将遵循的蓝图。
-- 不能为 `Dog` 添加新的实例变量；它们都必须完全遵循蓝图。
+> [!TIP]
+>
+> 【**对象实例化**】
+> 类不仅可以包含函数（方法），还可以包含数据。例如，我们可以为每个 `Dog` 添加一个 `size` 变量。
+>
+> 【**类实例化**】
+> - 我们创建一个单一的 `Dog` 类，然后创建这个 `Dog` 的实例。
+> - 这些实例也被称为“对象”。
+> - 类提供了一个所有 `Dog` 对象都将遵循的蓝图。
+> - 不能为 `Dog` 添加新的实例变量；它们都必须完全遵循蓝图。
+>
 
 ```java
 package lec2_intro2;
@@ -117,7 +128,8 @@ public class Dog {
 }
 ```
 
-## 静态与非静态方法
+# 静态(`static`)与非静态(`Non-Static`)方法
+
 在同一个类中，我们可以同时拥有静态和非静态方法。
 
 ```java
@@ -154,6 +166,7 @@ public class Dog {
 ```
 
 ## 实例方法
+
 ```java
 package lec2_intro2;
 public class Dog {
@@ -170,6 +183,7 @@ public class Dog {
 ```
 
 ### 带有静态和实例方法的 DogLauncher.java
+
 ```java
 package lec2_intro2;
 public class DogLauncher {

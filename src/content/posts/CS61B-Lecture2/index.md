@@ -16,10 +16,10 @@ lang: en
 >
 >If you wanna read the Chinese Edition,[Click Here](https://www.loners.site/posts/cs61b-lecture2-cn/)
 
-
-# Lecture 2: Classes and Entity, & Introduction of Debugging
+# Introduction
 
 **Dog.java**
+
 ```java
 package lec2_intro;
 public class Dog {
@@ -41,12 +41,15 @@ public class DogLauncher {
 
 When we run `DogLauncher.java`, it calls the `Dog` class and outputs "Bark!". This is good because it allows us to break down complex code into smaller parts using different classes.
 
-## Methods and Classes
+# Methods and Classes
+
 - Every method (a.k.a. function) is associated with some class.
 - To run a class, we must define a `main` method.
 - Not all classes have a `main` method!
 
->[!TIP] Shortcut to Run
+>[!TIP] 
+>
+>Shortcut to Run
 >
 >- Use `control + shift + .` as a shortcut to run.
 
@@ -56,7 +59,8 @@ When writing methods and classes, we often want to simulate real-world character
 **A Not-So-Good Approach**
 We could create a separate class for every single dog, but this would become redundant quickly.
 
-## Solution: Instance Variables
+**Solution: Instance Variables**
+
 The real solution is to create an entity (instance) that can represent specific characteristics. For example, the sound a dog makes can depend on its weight.
 
 ```java
@@ -77,6 +81,7 @@ public class Dog {
 ```
 
 **DogLauncher.java with Instance**
+
 ```java
 package lec2_intro2;
 public class DogLauncher {
@@ -88,10 +93,13 @@ public class DogLauncher {
 }
 ```
 
->[!TIP] Object Instantiation
+>[!TIP] 
+>
+>**【Object Instantiation】**
 >Classes can contain not just functions (methods), but also data. For example, we can add a `size` variable to each `Dog`.
 >
->[!TIP] Class Instantiation
+>**【Class Instantiation】**
+>
 >- We create a single `Dog` class and then create instances of this `Dog`.
 >- These instances are also called 'objects'.
 >- The class provides a blueprint that all `Dog` objects will follow.
@@ -123,7 +131,8 @@ public class Dog {
 }
 ```
 
-## Static vs. Non-Static Methods
+# `Static` vs. `Non-Static` Methods
+
 In the same class, we can have both static and non-static methods.
 
 ```java
@@ -160,6 +169,7 @@ public class Dog {
 ```
 
 ## Instance Methods
+
 ```java
 package lec2_intro2;
 public class Dog {
@@ -176,6 +186,7 @@ public class Dog {
 ```
 
 ## DogLauncher.java with Static and Instance Methods
+
 ```java
 package lec2_intro2;
 public class DogLauncher {
@@ -189,13 +200,19 @@ public class DogLauncher {
 }
 ```
 
-## Static Variables
-Static variables are common to the entire class, whereas instance variables are specific to each object.
+> [!TIP]
+>
+> **Static Variables**
+>
+> Static variables are common to the entire class, whereas instance variables are specific to each object.
+>
 
-## Interactive Debugging
+**Interactive Debugging**
+
 So far (e.g., in CS61A), you might have added print statements to find bugs in your code. Today, we'll use IntelliJ's built-in, interactive debugging tool to find bugs in some code. Debugging is more of an art than a science.
 
 ## Example: Using IntelliJ's Debugger
+
 ```java
 package lec2_intro2;
 public class DogLauncher {
@@ -220,7 +237,7 @@ Classes, instances, and methods—these concepts can be confusing for beginners.
 We often say that classes are abstract, but what does that really mean? In political science, abstraction involves distilling universal patterns from specific social phenomena, like concepts of power, freedom, or justice. In philosophy, it's more about epistemology and ontology—how abstraction helps us grasp the essence of the world.
 
 > [!NOTE]  
-> Abstraction isn't just theoretical; it's grounded in reality. We identify common traits in concrete things, and that's exactly what defines the attributes, methods, and instances of a class.
+> **Abstraction isn't just theoretical, it's grounded in reality. We identify common traits in concrete things, and that's exactly what defines the attributes, methods, and instances of a class.**
 
 Take humans, for example. A single person can be thought of as an **instance**, with their own attributes (like name and age) and behaviors (like walking or thinking). But humans aren't isolated—we share common traits while also having unique qualities. This uniqueness is referred to in Java as **polymorphism**.
 
@@ -231,3 +248,4 @@ Another key feature of classes is **encapsulation**. Think of an air conditioner
 Finally, **instantiation** means turning a class into a specific object. This object inherits the class's common traits but also has its own unique qualities. For example, Zhang San and Li Si are both human instances. When they hear a bell, they instinctively run to their classrooms, but their names and specific behaviors differ.
 
 By using these concepts, we can model complex real-world relationships more clearly, while making code more organized and maintainable.
+
