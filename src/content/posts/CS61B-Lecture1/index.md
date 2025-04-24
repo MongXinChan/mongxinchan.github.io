@@ -119,7 +119,7 @@ lang: en
 # Intro to Java
 
 ```python
-print("hello world");
+print("hello world")
 ```
 
 >[!NOTE]
