@@ -191,7 +191,7 @@ printf("%3c\n",ch);
     3. üIf the installation directory of gdb is displayed after running command "**which** **gdb**" is executed, it means that gdb has been successfully installed.
     
         Like:
-        ![image-20250422222422877](./images\debuggingUsingGdb2.png)
+        ![image-20250422222422877](./images/debuggingUsingGdb2.png)
     
 
 ### 2.2 configure VSCode for using gdb to debug C/C++ code
