@@ -31,15 +31,15 @@ lang: en
 
 ​	` cout.set(fmtflags);`
 
-![image-20250422104606826](.\images\ios_baseSetf.png)
+![image-20250422104606826](./images/ios_baseSetf.png)
 
-![image-20250422104714487](.\images\ios_baseSetf2.png)
+![image-20250422104714487](./images/ios_baseSetf2.png)
 
 The second one is:
 
 ​	`cout.set(fmtflags,fmtflags);`
 
-![image-20250422104909301](.\images\ios_baseSetf3.png)
+![image-20250422104909301](./images/ios_baseSetf3.png)
 
 1.1.2. **`cout.width(len)`**:set the field width
 
@@ -120,9 +120,9 @@ Output-result:
 
 C++ <u>**offers several manipulator**</u>s to invoke setf(),automatically supplying the right arguments.
 
-![image-20250422221256284](.\images\ios_baseSetf4.png)
+![image-20250422221256284](./images/ios_baseSetf4.png)
 
-![image-20250422221300145](.\images\ios_baseSetf5.png)
+![image-20250422221300145](./images/ios_baseSetf5.png)
 
 ## 1.2 Using iomanip manipulators
 
@@ -180,7 +180,7 @@ printf("%3c\n",ch);
         sudo apt undate
         ```
     
-        ![image-20250422222533620](.\images\debuggingUsingGdb.png)
+        ![image-20250422222533620](./images/debuggingUsingGdb.png)
     
     2. if you wanna **insatll** gdb, using it:
     
@@ -191,7 +191,7 @@ printf("%3c\n",ch);
     3. üIf the installation directory of gdb is displayed after running command "**which** **gdb**" is executed, it means that gdb has been successfully installed.
     
         Like:
-        ![image-20250422222422877](.\images\debuggingUsingGdb2.png)
+        ![image-20250422222422877](./images\debuggingUsingGdb2.png)
     
 
 ### 2.2 configure VSCode for using gdb to debug C/C++ code
@@ -242,13 +242,13 @@ printf("%3c\n",ch);
 
 - Compile the source code with "-g" option to generate information for debug and generate the executable file
 
-    ![image-20250427150150671](.\images\optionToGenerate.png)
+    ![image-20250427150150671](./images/optionToGenerate.png)
 
-    and you just click here:![image-20250427150040865](.\images\debug.png)
+    and you just click here:![image-20250427150040865](./images/debug.png)
 
 ### 2.4 Set "BreakPoint" on source file, lunch gdb to run and debug
 
-![image-20250427150322747](.\images\setBreakPoint.png)
+![image-20250427150322747](./images/setBreakPoint.png)
 
 ### 2.5 View the data stored in a variable by gdb(optional)
 
@@ -258,7 +258,7 @@ printf("%3c\n",ch);
         - exec [gdb command] in vscode
     - step3. View the results after executing the command in the “DEBUG CONSOLE” window.
 
-![image-20250427150452120](.\images\viewTheDataStored.png)
+![image-20250427150452120](./images/viewTheDataStored.png)
 
 ### 2.6 Examine
 
@@ -292,7 +292,7 @@ we could use the command to make x equals some variable:
 0x7fffffffd50d:	255
 ```
 
-![image-20250427152752336](.\images\terminalX.png)
+![image-20250427152752336](./images/terminalX.png)
 
 - x /nfu addr
     - n, the repeat count
@@ -320,9 +320,9 @@ int main(){
 }
 ```
 
-![image-20250427155034241](.\images\theImplementsDetails.png)
+![image-20250427155034241](./images/theImplementsDetails.png)
 
-![image-20250427155045494](.\images\theTerminationOfSize.png)
+![image-20250427155045494](./images/theTerminationOfSize.png)
 
 ### 3.2 Signed vs Unsigned
 
@@ -343,7 +343,7 @@ int main(){
 }
 ```
 
-![image-20250427155317317](.\images\differentUnsignedAndSigned.png)
+![image-20250427155317317](./images/differentUnsignedAndSigned.png)
 
 ## 4. Exerices
 
