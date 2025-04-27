@@ -131,7 +131,7 @@ The default output executable file is called “a.exe”(Windows) or “a.out”
 
 ![image-20250404172756641](./pic/compileFileStep5.png)
 
-## Task 4Terminal Output
+## Task 4 Terminal Output
 
 **printf**(format-control-string, other-arguments) f**ormat-control-string** describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).
 
