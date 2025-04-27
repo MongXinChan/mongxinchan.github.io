@@ -23,9 +23,9 @@ lang: en
 >
 >::github{repo="MongxinChan/CPP"}
 
-# C++ provides two methods to control the output formats
+# 1. C++ provides two methods to control the output formats
 
-## 1.1 Using member functions of ios class
+## Using member functions of ios class
 
 1.1.1 **`cout.setf()`**: The setf() function has two prototypes,the first one is:
 
@@ -124,7 +124,7 @@ C++ <u>**offers several manipulator**</u>s to invoke setf(),automatically supply
 
 ![image-20250422221300145](./images/ios_baseSetf5.png)
 
-## 1.2 Using iomanip manipulators
+## Using iomanip manipulators
 
 `#include <iomanip>`
 
@@ -155,7 +155,7 @@ int main()
 }
 ```
 
-## 1.3 `printf()` vs `cout`
+##  `printf()` vs `cout`
 
 Which one do you prefer? 
 
@@ -168,9 +168,16 @@ printf("%f,%8.1f,%.2f,%.2e",f,f,f,f);
 printf("%3c\n",ch);
 ```
 
-## Debug C/C++ by using gdb in VScode
 
-### 2.1 Install "gdb" (the debug tool of C/C++)
+>[!TIP]
+>
+>在设定输出格式时，如果并不复杂可以用cout，否则用printf，由于cout和print并不是属于同一个输出流，如果混用会容易超时，所以一般只采用一种输入输出格式。
+>
+>printf()是C语言的标准输出函数，而cout是C++的标准输出函数。
+>
+# 2. Debug C/C++ by using gdb in VScode
+
+## Install "gdb" (the debug tool of C/C++)
 
 - using cmd "**which** **gdb**" to check whether gdb is installed or no
 
@@ -194,7 +201,7 @@ printf("%3c\n",ch);
         ![image-20250422222422877](./images/debuggingUsingGdb2.png)
     
 
-### 2.2 configure VSCode for using gdb to debug C/C++ code
+##  configure VSCode for using gdb to debug C/C++ code
 
 - create and edit `".vscode"` folder and json files
 
@@ -238,7 +245,7 @@ printf("%3c\n",ch);
         ~~~
 
 
-### 2.3 lunch gdb to debug in VS Code by "Run and Debug"
+## lunch gdb to debug in VS Code by "Run and Debug"
 
 - Compile the source code with "-g" option to generate information for debug and generate the executable file
 
@@ -246,11 +253,11 @@ printf("%3c\n",ch);
 
     and you just click here:![image-20250427150040865](./images/debug.png)
 
-### 2.4 Set "BreakPoint" on source file, lunch gdb to run and debug
+## Set "BreakPoint" on source file, lunch gdb to run and debug
 
 ![image-20250427150322747](./images/setBreakPoint.png)
 
-### 2.5 View the data stored in a variable by gdb(optional)
+## View the data stored in a variable by gdb(optional)
 
 - During debugging, you can use GDB commands to view the data stored in variable(s).
     - step1. choose “DEBUG CONSOLE” window.
@@ -260,7 +267,7 @@ printf("%3c\n",ch);
 
 ![image-20250427150452120](./images/viewTheDataStored.png)
 
-### 2.6 Examine
+## Examine
 
 Using the command x (for “examine”) to examine memory in any of several formats, independently of your program’s data types.
 
@@ -301,9 +308,9 @@ we could use the command to make x equals some variable:
 
 
 
-## 3.Data type conversions and calculations
+# 3. Data type conversions and calculations
 
-### 3.1 data storage: integer vs float
+## data storage: integer vs float
 
 ```cpp
 #include<iostream>
@@ -324,7 +331,7 @@ int main(){
 
 ![image-20250427155045494](./images/theTerminationOfSize.png)
 
-### 3.2 Signed vs Unsigned
+##  Signed vs Unsigned
 
 - Integer promotions of Implicit conversions
 
@@ -345,9 +352,9 @@ int main(){
 
 ![image-20250427155317317](./images/differentUnsignedAndSigned.png)
 
-## 4. Exerices
+# 4. Exerices
 
-### 4.1 Compile and run the following program
+##  Compile and run the following program
 
 Whta's the result?
 
@@ -375,7 +382,7 @@ printf("a=%x\nb=%x\nc=%x\n",a,b,c);
 
 **You need to explain the reason to a SA to pass the test.**
 
-### 4.2. Write a program to calculate integer multiplication: 56789 * 23456789
+##  Write a program to calculate integer multiplication: 56789 * 23456789
 
 then print the result. Verify the result using a calculator.
 
@@ -385,7 +392,7 @@ How to get the correct result for this exercise?
 
 **It's my implement of mutiplication:** using the `long long int`,because there're 32 bit in `int` type,and the range of the `int` type is $-2^{31}$ ~ $2^{31}-1$. And there're 64 bit in`long long int`,the MAX value around $9*10^{18}$
 
-### 4.3. Run the following source code and explain the result.
+##  Run the following source code and explain the result.
 
 Then using the method learnt in lecture2 to make the output of the code same as following picture .
 
@@ -419,7 +426,7 @@ int main()
 
 **It's my answer:**When with the float and double type,It's a matter of accuracy, **which means that computers can also deceive humans**.
 
-### 4.4. Complete the following source code to print the variables as the following picture and explain the result.
+## Complete the following source code to print the variables as the following picture and explain the result.
 
 Why the value of a and b are not equal? Explain the division operation with different types.
 
@@ -453,7 +460,7 @@ int main()
 
 When you use `(int)x`,it means the x will be explicit conversed to `int` type,and the `19.99` will be the `19`. Different the precision of division will effect on the result.
 
-### 4.5. What is the output of the code as follows? What is the meaning of **auto** when defines a variable in C++?
+## What is the output of the code as follows? What is the meaning of **auto** when defines a variable in C++?
 
 You need to explain the reason to a SA to pass the test.
 

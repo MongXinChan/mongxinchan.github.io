@@ -131,7 +131,7 @@ The default output executable file is called “a.exe”(Windows) or “a.out”
 
 ![image-20250404172756641](./pic/compileFileStep5.png)
 
-## Task# 4Terminal Output
+## Task 4Terminal Output
 
 **printf**(format-control-string, other-arguments) f**ormat-control-string** describes the output format, which consists of conversion specifiers, field  widths, precisions and literal characters with percent sign(%).
 
@@ -139,7 +139,7 @@ The default output executable file is called “a.exe”(Windows) or “a.out”
 
 
 
-## Task# 5 Execrise
+## Task 5 Execrise
 
 We couldnot directly compile the `main.cpp` if we only compile the `main.cpp` advoke `g++ -o main main.cpp && ./main`
 
@@ -161,11 +161,11 @@ We couldnot directly compile the `main.cpp` if we only compile the `main.cpp` ad
 
 
     - 链接两个对象文件生成可执行文件：
-
+    
         ~~~bash
         g++ main.o add.o -o myprogram.exe
         ~~~
-
+    
         ```bash
         gcc -c add.cpp -o add.o
         gcc -c main.cpp -o main.o
