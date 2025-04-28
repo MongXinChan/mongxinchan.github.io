@@ -69,17 +69,17 @@ CommandName [option(s)] [parameter(s)]
 
 ## 1.1 Linux directory and file commands:
 
-| **Command**                 | **Meaning**                                               |
-| --------------------------- | --------------------------------------------------------- |
-| **pwd**                     | **P**rint the name of current/**w**orking  **d**irectory. |
-| **cd** <directory name>     | **C**hange the current **d**irectory.                     |
-| **ls**                      | **L**i**s**t  of  content of a directory.                 |
-| **mkdir**  <directory name> | **M**a**k**e a  new **dir**ectory  under any directory.   |
-| **rmdir**  <directory name> | **R**e**m**ove **dir**ectories without files.             |
-| **cat** <file name>         | Display content of the file.                              |
-| **rm** <file name>          | **R**e**m**ove  a file.                                   |
-| **cp** <source> <dest>      | **C**o**p**y a  file or files to another                  |
-| **mv**<source><dest>        | **M**o**v**e a  file or files to another directory        |
+| **Command**                   | **Meaning**                                               |
+| ----------------------------- | --------------------------------------------------------- |
+| **pwd**                       | **P**rint the name of current/**w**orking  **d**irectory. |
+| **cd** `<directory name>`     | **C**hange the current **d**irectory.                     |
+| **ls**                        | **L**i**s**t  of  content of a directory.                 |
+| **mkdir**  `<directory name>` | **M**a**k**e a  new **dir**ectory  under any directory.   |
+| **rmdir**  `<directory name>` | **R**e**m**ove **dir**ectories without files.             |
+| **cat** `<file name>`         | Display content of the file.                              |
+| **rm** `<file name>`          | **R**e**m**ove  a file.                                   |
+| **cp** `<source> <dest>`      | **C**o**p**y a  file or files to another                  |
+| **mv** `<source><dest>`       | **M**o**v**e a  file or files to another directory        |
 
 **cat/tail/head, less/more, nano/vim, file, whereis, echo**
 
@@ -616,33 +616,55 @@ You can click here to learn more:
 
 ## 4.1 **Exercises . commands and command list**
 
-The existing directory structure is shown in the upper right image. There are different types of C/C++files in the “p1” directory while the directory structure under p2 is unknown.
+The existing directory structure is shown in the upper right image. There are different types of C/C++files in the `p1` directory while the directory structure under p2 is unknown.
  ![image-20250428095913754](./images/exercise1.png)
- Task. use the command list to create subdirectories as needed and place files of different types into different subdirectories in the “p2” directory (as shown in the lower right image).Place the header file in p2/inc, and the cpp source file in p2/src, and create p2/build.
+
+> [!IMPORTANT]
+>
+> Task. Use the command list to create subdirectories as needed and place files of different types into different subdirectories in the `p2` directory (as shown in the lower right image).Place the header file in `p2/inc`, and the cpp source file in `p2/src`, and create `p2/build`.
 
 > [!NOTE]
 >
-> 1. when using commands, if there is already an “inc” subdirectories, do not create “inc” repeatly. If there is no “inc” subdirectories, create it;The same requirement also applies to “src” and “build”.
+> 1. when using commands, if there is already an `inc` subdirectories, do not create `inc` repeatly. If there is no `inc` subdirectories, create it;The same requirement also applies to `src` and `build`.
 >
 > 2. File copying work should only be performed after the destination subdirectories have been created.
 >
-> 3. Use as few command lists as possible to complete this exercise (options include “and list”, “or list”, “command sequence”, which can be combined as needed)
+> 3. Use as few command lists as possible to complete this exercise (options include `and list`, `or list`, `command sequence`, which can be combined as needed)
+
+**My implements:**
+
+![image-20250428234625985](./images/implements2.png)
+
+or use this:
+
+```bash
+mkdir -p p2 &&
+cd p2 &&
+mkdir -p inc src build && \
+cp -u ../lab/functions.h inc/ && \
+cp -u ../lab/makefile inc/ && \
+cp -u ../lab/factorial.cpp src/ && \
+cp -u ../lab/main.cpp src/ && \
+cp -u ../lab/printhello.cpp src/
+```
+
+![image-20250429005017531](./images/implements1.png)
 
 ## 4.2 **Exercises . Makefile and make**
 
-create a makefile, run it by command “make” or “make clean” to complete following tasks:
+create a makefile, run it by command `make` or `make clean` to complete following tasks:
 
-1. compile your project(program) or only compile the update files in the project by running “make”based on makefile to generate the executable file “lab3_practice”.
+1. compile your project(program) or only compile the update files in the project by running `make`based on makefile to generate the executable file `lab3_practice`.
 
     > [!NOTE]
     >
-    > the object file *.o and the executable file “lab3_practice” should be in the directory “build”
+    > the object file *.o and the executable file `lab3_practice` should be in the directory `build`
 
-2. remove all the files in the directory “build” by running “make clean” 
+2. remove all the files in the directory `build` by running `make clean` 
 
 ![image-20250428095927958](./images/exercise2.png)
 
-3. edit the source file “lab3_practice.cpp” (change parameter `5` to another number), save it, then run “make” again, which object file would be updated in the process? 
+3. edit the source file `lab3_practice.cpp` (change parameter `5` to another number), save it, then run `make` again, which object file would be updated in the process? 
 
 ## 4.3 **Exercises** . Run the following source code and explain the result.
 
@@ -662,6 +684,8 @@ int main()
 }
 
 ```
+
+Using the `size_t`,and the `size_t`, and the range of the type like the `unsigned int` ， so you will konw the `n` will not be less than 0.
 
 ## 4.4 Exerices . Run the following source code and explain the result.
 
@@ -685,6 +709,8 @@ int main()
 
 ```
 
+Firstly,the code shows us a while-loop when `n`>0 its condition is true,but the `sum` donot initialize and `n` donot plus or mins to the while-loop is ALWAYS-TRUE.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -701,8 +727,11 @@ int main()
     return 0;
 }
 
-
 ```
+
+Secondly,the code shows the n is the `unsigned int` type ,but the `sum` still donot initialize.Then the `n` still not plus or mins to the while-loop is ALWAYS-TRUE .
+
+Thirdly, there're the same question in the two Codes,just like `sum` donot initialize and the `n` donot changes. So we should make the `n` mins,and initialize the `sum`. 
 
 ## 4.5 Exerices. Run the following source code and explain the result.
 
@@ -726,3 +755,4 @@ int main()
 
 ```
 
+Actually, there're the same problems in the `Exerices4.4`,donot initialize the participation elements of while-loop, it will effect on the while-loop cannot excute rightly.
