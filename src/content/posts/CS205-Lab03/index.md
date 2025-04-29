@@ -654,17 +654,71 @@ cp -u ../lab/printhello.cpp src/
 
 create a makefile, run it by command `make` or `make clean` to complete following tasks:
 
+![image-20250428095927958](./images/exercise2.png)
+
 1. compile your project(program) or only compile the update files in the project by running `make`based on makefile to generate the executable file `lab3_practice`.
 
     > [!NOTE]
     >
     > the object file *.o and the executable file `lab3_practice` should be in the directory `build`
 
+    > [!TIP]
+    >
+    > 根据这个目录去放置并且自行撰写Makefile文件
+
+    ```makefile
+    # 定义编译器
+    CC=g++
+    # 定义编译选项
+    CFLAGS=-Wall -g -IInc
+    # 定义目标文件目录
+    BUILD_DIR=build
+    # 定义源文件目录
+    SRC_DIR=src
+    # 定义头文件目录
+    INC_DIR=Inc
+    # 定义源文件
+    SRCS=$(wildcard $(SRC_DIR)/*.cpp)
+    # 定义目标文件
+    OBJS=$(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
+    # 定义最终的可执行文件
+    TARGET=$(BUILD_DIR)/lab3_practice
+    
+    # 创建目标文件目录
+    $(BUILD_DIR):
+    	mkdir -p $(BUILD_DIR)
+    
+    # 编译目标文件
+    $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
+    	$(CC) $(CFLAGS) -c $< -o $@
+    
+    # 链接目标文件生成可执行文件
+    $(TARGET): $(OBJS)
+    	$(CC) $(OBJS) -o $@
+    ```
+
 2. remove all the files in the directory `build` by running `make clean` 
 
-![image-20250428095927958](./images/exercise2.png)
+    ```makefile
+    # 清理生成的文件
+    clean:
+        rm -rf $(BUILD_DIR)
+    ```
 
 3. edit the source file `lab3_practice.cpp` (change parameter `5` to another number), save it, then run `make` again, which object file would be updated in the process? 
+
+    由于fib文件有错，修改factorial为fib，否则会没有定义fib而编译失败。
+    
+    ```cpp
+    #include "functions.h"
+    
+    int fib(int n) {
+        if (n <= 1) return n;
+        return fib(n - 1) + fib(n - 2);
+    }
+    ```
+    
+    ![image-20250429233528023](./images/successfulMakefile12.png)
 
 ## 4.3 **Exercises** . Run the following source code and explain the result.
 

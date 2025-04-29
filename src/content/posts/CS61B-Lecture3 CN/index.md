@@ -18,7 +18,7 @@ lang: zh_CN
 
 **问题引入**
 
-![](./Question.png)
+![](./pic/Question.png)
 
 上面两个代码中，是否b的修改会影响到a的数值？而x的修改是否会影响到y的数值？
 
@@ -57,7 +57,7 @@ y=567213.112;
 
 ## 1.3 引用类型与“=”操作符
 
-![](D:\Blog\mongxinchan.github.io\src\content\posts\CS61B-Lecture3 CN\Walrus.png)
+![](./pic/Walrus.png)
 
 引用类型变量的赋值操作遵循**“黄金法则”**（Golden Rule of Equals）：`y = x`会将`x`中的所有位复制到`y`中。在视觉上，我们可以将这个过程理解为复制一个指向对象实例的箭头。例如，当我们执行`b = a`时，`b`会指向与`a`相同的对象实例。
 
