@@ -54,7 +54,7 @@ Parameters of function
 
 **Dynamic linking and Dynamic Libraries** Dynamic Linking doesn’t require the code to be copied, it is done by just placing name of the library in the binary file. The actual linking happens when the program is run, when both the binary file and the library are in memory. If multiple programs in the system link to the same dynamic link library, they all reference the library. Therefore, this library is shared by multiple programs and is called a "**shared library**" . Examples of Dynamic libraries are, **.so** in Linux and **`.dll`** in Windows.
 
-<img src="D:\Manage\CPP\week06\images\image-20250506091745553.png" alt="image-20250506091745553" style="zoom:50%;" />
+![image-20250506091745553](./images/image-20250506091745553.png)
 
 |                 | **advantages**                                               | **disadvantages**                                            |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -67,7 +67,7 @@ In this part,we focus on the static library.
 
 [You can click here to read the code](https://github.com/MongXinChan/SUST-Cpp-course/tree/main/lab06/lab)
 
-![image-20250506092331495](D:\Manage\CPP\week06\images\image-20250506092331495.png)
+![image-20250506092331495](./images/image-20250506092331495.png)
 
 - In previous class we do the following:
 - This will compile the “main.cpp” and “mymath.cpp” into “main”
@@ -78,7 +78,7 @@ g++ *.cpp -o main -std=c++11
 ./main
 ```
 
-![image-20250506092622918](D:\Manage\CPP\week06\images\image-20250506092622918.png)
+![image-20250506092622918](./images/image-20250506092622918.png)
 
 - A static library is created by **.o** file.
 - Remember to use “**ar**” command with arguments “**-cr**” when building it.
@@ -91,11 +91,11 @@ ar -cr libmymath.a mymath.o
 ls
 ```
 
-![image-20250506093008943](D:\Manage\CPP\week06\images\image-20250506093008943.png)
+![image-20250506093008943](./images/image-20250506093008943.png)
 
 Result:
 
-![image-20250506093153253](D:\Manage\CPP\week06\images\image-20250506093153253.png)
+![image-20250506093153253](./images/image-20250506093153253.png)
 
 
 
@@ -116,14 +116,14 @@ g++ main.o -L. -lmymath
 
 
 
-![image-20250506093300713](D:\Manage\CPP\week06\images\image-20250506093300713.png)
+![image-20250506093300713](./images/image-20250506093300713.png)
 
 - **-L**: indicates the directory of libraries
 - **-l**: indicates the library name, the compiler can give the “**lib**” prefix to the library name and follows with **.a** as extension name.
 
 ## 1.3 makefile
 
-![image-20250506094421596](D:\Manage\CPP\week06\images\image-20250506094421596.png)
+![image-20250506094421596](./images/image-20250506094421596.png)
 
 ```Makefile
 # Makefile with static library
@@ -168,7 +168,7 @@ clean:
 
 
 
-![image-20250506094222507](D:\Manage\CPP\week06\images\image-20250506094222507.png)
+![image-20250506094222507](./images/image-20250506094222507.png)
 
 ```makefile
 # makefile with all the .c files created static library
@@ -189,7 +189,7 @@ clean:
 
 
 
-![image-20250506094309180](D:\Manage\CPP\week06\images\image-20250506094309180.png)
+![image-20250506094309180](./images/image-20250506094309180.png)
 
 
 
@@ -215,7 +215,7 @@ clean:
 
 
 
-![image-20250506094313930](D:\Manage\CPP\week06\images\image-20250506094313930.png)
+![image-20250506094313930](./images/image-20250506094313930.png)
 
 ```MAKEFILE
 $(TARGET): $(OBJS)
@@ -224,7 +224,7 @@ $(TARGET): $(OBJS)
 
 
 
-![image-20250506094323170](D:\Manage\CPP\week06\images\image-20250506094323170.png)
+![image-20250506094323170](./images/image-20250506094323170.png)
 
 ```MAKEFILE
 lib_srcs := $(filter-out src/main.c, $(wildcard src/*.c))
@@ -252,7 +252,7 @@ clean :
 
 
 
-![image-20250506094329584](D:\Manage\CPP\week06\images\image-20250506094329584.png)
+![image-20250506094329584](./images/image-20250506094329584.png)
 
 ```MAKEFILE
 #============= Linking static library ==============
@@ -287,7 +287,7 @@ clean :
 
 We want to create a static(or dynamic) library by function.cpp and call the static library in main.cpp. This time we write two CMakeLists.txt files, one in **CmakeDemo4** folder and another in **lib** folder.
 
-![image-20250511184053491](D:\Manage\CPP\week06\images\image-20250511184053491.png)
+![image-20250511184053491](./images/image-20250511184053491.png)
 
 ```makefile
 # Search the source files in the current directory
@@ -298,7 +298,7 @@ aux_source_directory(. LIB_SRC)
 add_library(MyFunction STATIC ${LIB_SRC})
 ```
 
-![image-20250511184109711](D:\Manage\CPP\week06\images\image-20250511184109711.png)
+![image-20250511184109711](./images/image-20250511184109711.png)
 
 ```makefile
 # CMake minimum version
@@ -365,7 +365,7 @@ Q3. What’s the output of this piece of code while input data is 1 and 2?
 
 我们发现，得到的答案是：
 
-![image-20250511184449060](D:\Manage\CPP\week06\images\image-20250511184449060.png)
+![image-20250511184449060](./images/image-20250511184449060.png)
 
 这是由于值传递和址传递而导致的。
 
@@ -378,7 +378,7 @@ Q3. What’s the output of this piece of code while input data is 1 and 2?
 
 here passing the value of a huge struct needs more stack space (1040+8+1032) than passing the value of a pointer which points the buge struct(16+1040). 
 
-![image-20250512162905258](D:\Manage\CPP\week06\images\image-20250512162905258.png)
+![image-20250512162905258](./images/image-20250512162905258.png)
 
 - using “aarch64-linux-gnu-g++ -S -o” to generate assembly code based on **ARM64**.
 - In ARM64, register “**sp**” is stack pointer
@@ -395,7 +395,7 @@ cat fdemo3_ptr-arm64.s | grep sub | grep sp
 
 here passing the value of the huge struct needs more stack space (2096) than passing the value of a pointer which points the buge struct(1056). 
 
-![image-20250512163137542](D:\Manage\CPP\week06\images\image-20250512163137542.png)
+![image-20250512163137542](./images/image-20250512163137542.png)
 
 - using “riscv64-linux-gnu-gcc -S -o” to generate assembly code based on **RISC-V64.**
 - In **RISC-V64**, register “**sp**” is stack pointer.
@@ -412,7 +412,7 @@ cat fdemo3_ptr-risc-v64.s | grep addi | grep sp,-
 
 here passing the value of the huge struct needs more stack space (16+64+2032) than passing the value of a pointer which points the buge struct(32+1056). 
 
-![image-20250512163344162](D:\Manage\CPP\week06\images\image-20250512163344162.png)
+![image-20250512163344162](./images/image-20250512163344162.png)
 
 
 
@@ -513,7 +513,7 @@ You are required to compile the function into a static library “libswap.a”, 
 > }
 > ```
 >
-> ![image-20250512160815003](D:\Manage\CPP\week06\images\image-20250512160815003.png)
+> ![image-20250512160815003](./images/image-20250512160815003.png)
 >
 > Q1. Is the address of variable “c” same with the address of “i”? how about the address of “b” and the address of “j” ?
 >
@@ -521,7 +521,7 @@ You are required to compile the function into a static library “libswap.a”, 
 >
 >  What’s the problem of the following code? Fix it and make the return value is 4. 
 >
-> ![image-20250512160821780](D:\Manage\CPP\week06\images\image-20250512160821780.png)
+> ![image-20250512160821780](./images/image-20250512160821780.png)
 >
 > ```cpp
 > int add3_x(int &c,int &d){
@@ -559,7 +559,7 @@ g++ -S -o fdemo3-x64.s fdemo3.c
 cat fdemo3-x64.s | grep sub
 ```
 
-![image-20250512162229582](D:\Manage\CPP\week06\images\image-20250512162229582.png)
+![image-20250512162229582](./images/image-20250512162229582.png)
 
 在这个例子中，`disp_struct` 函数接收一个 `Stu` 类型的结构体作为参数。当调用 `disp_struct(stum);` 时，`stum` 结构体的内容会被复制到函数内部的 `stud` 参数中。这种通过值传递的方式意味着函数内部对 `stud` 的修改不会影响到原始的 `stum` 结构体。
 
@@ -568,7 +568,7 @@ g++ -S -o fdemo3_ptr-x64.s fdemo3_ptr.c
 cat fdemo3_ptr-x64.s | grep sub
 ```
 
-![image-20250512162208724](D:\Manage\CPP\week06\images\image-20250512162208724.png)
+![image-20250512162208724](./images/image-20250512162208724.png)
 
 在这个例子中，`disp_struct` 函数接收一个指向 `Stu` 类型结构体的指针作为参数。当调用 `disp_struct(&stum);` 时，传递的是 `stum` 结构体的地址。函数内部通过解引用操作符 `->` 来访问和修改结构体的成员。这种通过指针传递的方式意味着函数内部对 `stud` 的修改会直接影响到原始的 `stum` 结构体。
 
