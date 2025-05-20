@@ -130,7 +130,7 @@ C++ <u>**offers several manipulator**</u>s to invoke setf(),automatically supply
 
 1. setw(p)   2. setfill(ch)   3. setprecision(d)
 
-```CPP
+```cpp
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -159,7 +159,7 @@ int main()
 
 Which one do you prefer? 
 
-```CPP
+```cpp
 int a=1234;
 float f=123.456;
 char ch='a';

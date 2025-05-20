@@ -1,5 +1,5 @@
 ---
-title: CS205 Lab01
+title: CS205 Lab01 Install WSL and use the WSL in visual studio code
 published: 2025-03-18
 updated: 2025-04-03
 description: 'Welcome to my CS205 lecture notes!'

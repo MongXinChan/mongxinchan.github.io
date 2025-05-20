@@ -125,7 +125,7 @@ g++ main.o -L. -lmymath
 
 ![image-20250506094421596](./images/image-20250506094421596.png)
 
-```Makefile
+```makefile
 # Makefile with static library
 
 .PHONY: liba testliba clean
@@ -217,7 +217,7 @@ clean:
 
 ![image-20250506094313930](./images/image-20250506094313930.png)
 
-```MAKEFILE
+```makefile
 $(TARGET): $(OBJS)
 	$(CC) $(LIB) $(LDFLAG)  %^ -o $@
 ```
@@ -226,7 +226,7 @@ $(TARGET): $(OBJS)
 
 ![image-20250506094323170](./images/image-20250506094323170.png)
 
-```MAKEFILE
+```makefile
 lib_srcs := $(filter-out src/main.c, $(wildcard src/*.c))
 lib_objs := $(patsubst %.c, %.o, $(lib_srcs))
 
@@ -254,7 +254,7 @@ clean :
 
 ![image-20250506094329584](./images/image-20250506094329584.png)
 
-```MAKEFILE
+```makefile
 #============= Linking static library ==============
 library_path := ./lib
 linking_libs := math
