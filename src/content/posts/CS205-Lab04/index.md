@@ -131,7 +131,7 @@ add_executable(hello ${DIR_SRCS})
 
 **We write CMakeLists.txt in <u>CmakeDemo3 folder.</u>**
 
-```TEX
+```plaintext
 ./CmakeDemo3
 │
 ├── src/
