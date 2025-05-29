@@ -63,7 +63,7 @@ Static member variables are shared among all objects of a class. This means that
 
 - **Definition and Initialization**:
 
-    ```CPP
+    ```cpp
     // Declare in class definition
     class StaticTest {
     private:
@@ -91,7 +91,7 @@ Static member functions can be called independently of any object of the class. 
 
 - **Definition and Invocation**:
 
-    ```CPP
+    ```cpp
     class StaticTest {
     private:
         static int m_value;
@@ -297,7 +297,7 @@ A class constructor is a special member function used to create and initialize o
     
 - **Object Creation and Constructor Invocation**:
 
-    ```CPP
+    ```cpp
     Box first(5.0, 6.0, 9.0); // Calls parameterized constructor
     Box second;            // Implicitly calls default constructor
     Box third = Box();      // Explicitly calls default constructor
