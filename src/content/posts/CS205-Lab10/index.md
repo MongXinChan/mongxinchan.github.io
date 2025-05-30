@@ -1,5 +1,5 @@
 ---
-title: 'CS205 Lab 10 Class 2 : operator overloading'
+title: 'CS205 Lab10 Class 2 : operator overloading'
 published: 2025-05-18
 updated: 2025-05-29
 description: 'C++ 中的运算符重载，包括其规则、成员与非成员函数的实现、返回值考量，以及类类型转换（隐式、显式、转换函数）。笔记中还简要对比了 Python 中的运算符重载，并提供了相关的代码示例和练习题以供学习。'

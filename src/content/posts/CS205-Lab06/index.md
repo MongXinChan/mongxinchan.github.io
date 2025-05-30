@@ -1,5 +1,5 @@
 ---
-title: CS205 Lab6 static library, parameters
+title: CS205 Lab06 static library, parameters
 published: 2025-05-06
 updated: 2025-05-12
 description: '主要涉及静态库的编译，以及参数的传递'

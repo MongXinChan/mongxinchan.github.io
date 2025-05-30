@@ -1,5 +1,5 @@
 ---
-title: CS205 Lab 9 Classes 1- Basics Constructors and Destructors
+title: CS205 Lab09 Class 1- Basics Constructors and Destructors
 published: 2025-05-14
 updated: 2025-05-20
 description: '本实验的核心目标是掌握C++中类的基本定义与使用，为后续更复杂的面向对象编程打下坚实基础。包括类的基本构成，对象的创建与使用，以及const与static的特性'
