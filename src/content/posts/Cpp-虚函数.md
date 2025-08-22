@@ -6,7 +6,7 @@ description: '在面向对象编程中，多态是一种强大的特性，它允
 image: ''
 tags: [ComputerScience,ProgramDesign,Cpp ]
 category: 'ComputerScience-CN'
-draft: false 
+draft: true 
 lang: zh_CN
 ---
 
@@ -274,7 +274,9 @@ int main() {
 
 ## 虚函数与模板
 
-虚函数和模板可以结合使用，但需要注意模板函数不能是虚函数。例如：
+虚函数和模板可以结合使用，但是C++ 标准规定，virtual 关键字不能用于函数模板的声明。这是因为虚函数机制依赖于虚表，而虚表是在编译期为特定的类生成的。函数模板在编译期并不能确定所有可能的实例化类型，因此编译器无法为它们生成虚表条目。
+如果想要实现类似的功能，通常会使用模板方法模式（Template Method Pattern）或者运行时多态和模板的结合。
+
 
 ```cpp
 class Base {
