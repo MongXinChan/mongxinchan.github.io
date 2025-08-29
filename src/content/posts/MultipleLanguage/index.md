@@ -6,6 +6,7 @@ tags: [Language]
 category: '人文'
 draft: false 
 lang: zh_CN
+published: 2025-08-30
 ---
 
 Lecture from [斯蒂芬·克拉申《二语习得》：“我们习得语言的方式有且仅有一种”｜中英校对版](https://www.bilibili.com/video/BV1GCJ3zHEZy?vd_source=8fd7b9a333ac83dc1a192e131987c03c)
